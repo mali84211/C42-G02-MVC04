@@ -3,4 +3,10 @@
     ViewData["Title"] = "Edit";
 }
 <h1>Edit Department</h1>
-<form asp-action=""></form>
+<form asp-action="Create">
+    <div calss="from-group">
+        <label asp-for="Code" class="col-from-label"></label>
+        <input asp-for="Code" class="from-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+</form>
